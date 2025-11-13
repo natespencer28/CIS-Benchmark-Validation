@@ -18,6 +18,9 @@ Apply.
 # Example:
 Get-MgUser -Filter "OnPremisesSyncEnabled eq true"
 
+https://github.com/natespencer28/M365_Automation/blob/main/1.1.1.ps1
+
+
 
 
 
