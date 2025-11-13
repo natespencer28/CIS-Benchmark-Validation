@@ -13,12 +13,15 @@ Apply.
 
 
 ### **Option B: PowerShell / Graph API**
-```powershell
+
+**[1.1.1.ps1](https://github.com/natespencer28/M365_Automation/blob/main/1.1.1.ps1)
+
 # Add recommended PowerShell or Graph commands
 # Example:
 Get-MgUser -Filter "OnPremisesSyncEnabled eq true"
 
-**[Powershell Script](https://github.com/natespencer28/M365_Automation/blob/main/1.1.1.ps1)
+
+
 
 
 
