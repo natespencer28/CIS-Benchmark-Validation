@@ -11,6 +11,8 @@ Apply.
 
 <img width="1189" height="324" alt="image" src="https://github.com/user-attachments/assets/67099826-da10-47f6-9d16-b10ddc8a1327" />
 
+**[Powershell Script](https://github.com/natespencer28/M365_Automation/blob/main/1.1.1.ps1)
+
 
 ### **Option B: PowerShell / Graph API**
 ```powershell
@@ -19,6 +21,7 @@ Apply.
 Get-MgUser -Filter "OnPremisesSyncEnabled eq true"
 
 https://github.com/natespencer28/M365_Automation/blob/main/1.1.1.ps1
+
 
 
 
