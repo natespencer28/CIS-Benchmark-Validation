@@ -20,6 +20,11 @@ Apply.
 "RoleManagement.Read.Directory","User.Read.All" 
 2. Run the following PowerShell script: 
 $DirectoryRoles = Get-MgDirectoryRole 
+    - name: Run inline PowerShell
+      shell: pwsh # Specifies the PowerShell shell
+      run: |
+        Write-Host "Hello from PowerShell!"
+        Get-ChildItem -Path .
 # Get privileged role IDs 
 $PrivilegedRoles = $DirectoryRoles | Where-Object { 
 $_.DisplayName -like "*Administrator*" -or $_.DisplayName -eq "Global 
@@ -39,6 +44,7 @@ ft DisplayName,UserPrincipalName,OnPremisesSyncEnabled
 If nothing returns, then no users with that criteria exist. 
 
 <img width="674" height="382" alt="image" src="https://github.com/user-attachments/assets/bbd89f1a-506c-4ad7-887c-239ed382a46d" />
+
 
 
 
