@@ -4,7 +4,5 @@ CIS, or the Center for Internet Security, has developed CIS Benchmarks to provid
 
 The CIS Benchmark for M365 Environments is located above. 
 
-# **1.1.1 (L1) Ensure Administrative Accounts Are Cloud-Only(**
-
-- **[M365 Tenant Setup](https://github.com/natespencer28/M365-Tenant-Setup)**
+# **1.1.1 (L1) Ensure Administrative Accounts Are Cloud-Only(https://github.com/natespencer28/CIS-Benchmark-Validation/blob/main/1.1.1%20Ensure%20Administrative%20accounts%20are%20cloud-only.md)**
 
