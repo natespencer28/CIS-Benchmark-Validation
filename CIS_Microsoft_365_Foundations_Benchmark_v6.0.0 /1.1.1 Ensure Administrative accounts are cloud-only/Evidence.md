@@ -16,15 +16,11 @@ Apply.
 
 [1.1.1.ps1](https://github.com/natespencer28/M365_Automation/blob/main/1.1.1.ps1)
 
-. Connect to Microsoft Graph using Connect-MgGraph -Scopes 
-"RoleManagement.Read.Directory","User.Read.All" 
-2. Run the following PowerShell script: 
+## Step 1 Connect to Microsoft Graph 
+-Connect-MgGraph -Scopes "RoleManagement.Read.Directory","User.Read.All" 
+## Step 2. Run the following PowerShell script: 
+
 $DirectoryRoles = Get-MgDirectoryRole 
-    - name: Run inline PowerShell
-      shell: pwsh # Specifies the PowerShell shell
-      run: |
-        Write-Host "Hello from PowerShell!"
-        Get-ChildItem -Path .
 # Get privileged role IDs 
 $PrivilegedRoles = $DirectoryRoles | Where-Object { 
 $_.DisplayName -like "*Administrator*" -or $_.DisplayName -eq "Global 
@@ -39,11 +35,14 @@ Get-MgUser -UserId $_.Id -Property UserPrincipalName, DisplayName, Id,
 OnPremisesSyncEnabled 
 } 
 $PrivilegedUsers | Where-Object { $_.OnPremisesSyncEnabled -eq $true } |  
-ft DisplayName,UserPrincipalName,OnPremisesSyncEnabled 
-3. The script will output any hybrid users that are also members of privileged roles. 
+ft DisplayName,UserPrincipalName,OnPremisesSyncEnabled
+
+
+## step 3. The script will output any hybrid users that are also members of privileged roles. 
 If nothing returns, then no users with that criteria exist. 
 
 <img width="674" height="382" alt="image" src="https://github.com/user-attachments/assets/bbd89f1a-506c-4ad7-887c-239ed382a46d" />
+
 
 
 
