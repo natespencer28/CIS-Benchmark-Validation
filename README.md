@@ -4,6 +4,3 @@ CIS, or the Center for Internet Security, has developed CIS Benchmarks to provid
 
 The CIS Benchmark for M365 Environments is located above. 
 
-[1.1.1 (L1) Ensure Administrative Accounts Are Cloud-Only] (1.1.1 Ensure Administrative accounts are cloud-only.md)
-
-README.md
