@@ -16,9 +16,31 @@ Apply.
 
 [1.1.1.ps1](https://github.com/natespencer28/M365_Automation/blob/main/1.1.1.ps1)
 
-# Add recommended PowerShell or Graph commands
-# Example:
-Get-MgUser -Filter "OnPremisesSyncEnabled eq true"
+. Connect to Microsoft Graph using Connect-MgGraph -Scopes 
+"RoleManagement.Read.Directory","User.Read.All" 
+2. Run the following PowerShell script: 
+$DirectoryRoles = Get-MgDirectoryRole 
+# Get privileged role IDs 
+$PrivilegedRoles = $DirectoryRoles | Where-Object { 
+$_.DisplayName -like "*Administrator*" -or $_.DisplayName -eq "Global 
+Reader" 
+} 
+# Get the members of these various roles 
+$RoleMembers = $PrivilegedRoles | ForEach-Object { Get-MgDirectoryRoleMember -DirectoryRoleId $_.Id } | 
+Select-Object Id -Unique 
+# Retrieve details about the members in these roles 
+$PrivilegedUsers = $RoleMembers | ForEach-Object { 
+Get-MgUser -UserId $_.Id -Property UserPrincipalName, DisplayName, Id, 
+OnPremisesSyncEnabled 
+} 
+$PrivilegedUsers | Where-Object { $_.OnPremisesSyncEnabled -eq $true } |  
+ft DisplayName,UserPrincipalName,OnPremisesSyncEnabled 
+3. The script will output any hybrid users that are also members of privileged roles. 
+If nothing returns, then no users with that criteria exist. 
+
+<img width="674" height="382" alt="image" src="https://github.com/user-attachments/assets/bbd89f1a-506c-4ad7-887c-239ed382a46d" />
+
+
 
 
 
