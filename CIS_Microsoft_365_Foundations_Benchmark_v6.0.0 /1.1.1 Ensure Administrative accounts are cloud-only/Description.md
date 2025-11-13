@@ -18,6 +18,8 @@ Explain **why this control matters**, including:
 Example:
 Enforcing this control reduces the attack surface by preventing compromised hybrid accounts from escalating privileges into the cloud environment.
 
+Evidence: CIS_Microsoft_365_Foundations_Benchmark_v6.0.0 /1.1.1 Ensure Administrative accounts are cloud-only/Evidence.md
+
 
 
 
