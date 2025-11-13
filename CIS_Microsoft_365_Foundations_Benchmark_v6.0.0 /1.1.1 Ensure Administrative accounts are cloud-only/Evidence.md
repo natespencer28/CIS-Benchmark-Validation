@@ -20,6 +20,7 @@ Apply.
 -Connect-MgGraph -Scopes "RoleManagement.Read.Directory","User.Read.All" 
 ## Step 2. Run the following PowerShell script: 
 
+```powershell
 $DirectoryRoles = Get-MgDirectoryRole 
 # Get privileged role IDs 
 $PrivilegedRoles = $DirectoryRoles | Where-Object { 
@@ -36,12 +37,13 @@ OnPremisesSyncEnabled
 } 
 $PrivilegedUsers | Where-Object { $_.OnPremisesSyncEnabled -eq $true } |  
 ft DisplayName,UserPrincipalName,OnPremisesSyncEnabled
+```
 
-
-## step 3. The script will output any hybrid users that are also members of privileged roles. 
+## Step 3. The script will output any hybrid users that are also members of privileged roles. 
 If nothing returns, then no users with that criteria exist. 
 
 <img width="674" height="382" alt="image" src="https://github.com/user-attachments/assets/bbd89f1a-506c-4ad7-887c-239ed382a46d" />
+
 
 
 
