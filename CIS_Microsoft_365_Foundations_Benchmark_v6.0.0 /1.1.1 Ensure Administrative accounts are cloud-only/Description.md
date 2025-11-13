@@ -18,20 +18,6 @@ Explain **why this control matters**, including:
 Example:
 Enforcing this control reduces the attack surface by preventing compromised hybrid accounts from escalating privileges into the cloud environment.
 
----
-
-## 🛠️ Remediation Steps
-
-### **Option A: Admin Center**
-1. *Step description…*  
-2. *Add screenshots or step-by-step instructions…*  
-3. *Include settings path (e.g., Entra ID → Users → Security)…*
-
-### **Option B: PowerShell / Graph API**
-```powershell
-# Add recommended PowerShell or Graph commands
-# Example:
-Get-MgUser -Filter "OnPremisesSyncEnabled eq true"
 
 
 
