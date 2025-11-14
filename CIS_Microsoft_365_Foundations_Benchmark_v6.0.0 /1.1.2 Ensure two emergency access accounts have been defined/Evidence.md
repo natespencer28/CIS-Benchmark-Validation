@@ -46,7 +46,9 @@ rules:
 
 ## **Additional suggestions for emergency account management:** 
 • Create access reviews for these users. 
+
 • Exclude users from conditional access rules. 
+
 • Add the account to a restricted management administrative unit. 
 
 
