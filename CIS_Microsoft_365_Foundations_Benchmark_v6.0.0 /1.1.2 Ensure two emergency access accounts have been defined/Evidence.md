@@ -27,37 +27,14 @@ rules:
 
 ### **The Evidence**
 
-[1.1.1.ps1](https://github.com/natespencer28/M365_Automation/blob/main/1.1.1.ps1)
+✅ The accounts are named correctly, and do NOT identify with a particular person.
+✅ The accounts use the default .onmicrosoft.com domain and not the organization's.
+✅ The accounts are cloud-only.
+✅ The accounts are unlicensed.
+✅ The accounts are assigned the Global Administrator directory role.
+✅ The accounts are excluded from CA Policies.
 
-## Step 1 Connect to Microsoft Graph 
--Connect-MgGraph -Scopes "RoleManagement.Read.Directory","User.Read.All" 
-## Step 2. Run the following PowerShell script: 
-
-```powershell
-$DirectoryRoles = Get-MgDirectoryRole 
-# Get privileged role IDs 
-$PrivilegedRoles = $DirectoryRoles | Where-Object { 
-$_.DisplayName -like "*Administrator*" -or $_.DisplayName -eq "Global 
-Reader" 
-} 
-# Get the members of these various roles 
-$RoleMembers = $PrivilegedRoles | ForEach-Object { Get-MgDirectoryRoleMember -DirectoryRoleId $_.Id } | 
-Select-Object Id -Unique 
-# Retrieve details about the members in these roles 
-$PrivilegedUsers = $RoleMembers | ForEach-Object { 
-Get-MgUser -UserId $_.Id -Property UserPrincipalName, DisplayName, Id, 
-OnPremisesSyncEnabled 
-} 
-$PrivilegedUsers | Where-Object { $_.OnPremisesSyncEnabled -eq $true } |  
-ft DisplayName,UserPrincipalName,OnPremisesSyncEnabled
-```
-
-## Step 3. The script will output any hybrid users that are also members of privileged roles. 
-If nothing returns, then no users with that criteria exist. 
-
-<img width="674" height="382" alt="image" src="https://github.com/user-attachments/assets/bbd89f1a-506c-4ad7-887c-239ed382a46d" />
-
-
+<img width="655" height="209" alt="image" src="https://github.com/user-attachments/assets/b9560aa4-0a30-4bf6-a235-3c02c09a5c52" />
 
 
 
