@@ -1,7 +1,5 @@
 ## 🛠️ Remediation Steps
 
-### **The Audit**
-
 ## **Step 1**
 Ensure a policy and procedure is in place at the organization: 
 
