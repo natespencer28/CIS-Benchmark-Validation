@@ -44,6 +44,9 @@ rules:
 
 <img width="655" height="209" alt="image" src="https://github.com/user-attachments/assets/b9560aa4-0a30-4bf6-a235-3c02c09a5c52" />
 
+<img width="792" height="216" alt="image" src="https://github.com/user-attachments/assets/00d21352-e00d-4cd8-9475-294b3b483003" />
+
+
 ## **Additional suggestions for emergency account management:** 
 • Create access reviews for these users. 
 
