@@ -21,7 +21,8 @@ Ensure two emergency access accounts are defined:
   - The accounts are unlicensed.
   - The accounts are assigned the Global Administrator directory role.
 
-Step 3 - Ensure at least one account is excluded from all conditional access 
+## **Step 3**
+Ensure at least one account is excluded from all conditional access 
 rules: 
 1. Navigate Microsoft Entra admin center https://entra.microsoft.com/ 
 2. Expand Protection > Conditional Access. 
