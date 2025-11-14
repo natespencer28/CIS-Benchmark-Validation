@@ -11,11 +11,11 @@ Step 2 - Ensure two emergency access accounts are defined:
 1. Navigate to Microsoft 365 admin center https://admin.microsoft.com 
 2. Expand Users > Active Users 
 3. Inspect the designated emergency access accounts and ensure the following: 
-o The accounts are named correctly, and do NOT identify with a particular person. 
-o The accounts use the default .onmicrosoft.com domain and not the organization's. 
-o The accounts are cloud-only. 
-o The accounts are unlicensed. 
-o The accounts are assigned the Global Administrator directory role.
+  - The accounts are named correctly, and do NOT identify with a particular person. 
+  - The accounts use the default .onmicrosoft.com domain and not the organization's. 
+  - The accounts are cloud-only.
+  - The accounts are unlicensed.
+  - The accounts are assigned the Global Administrator directory role.
 
 Step 3 - Ensure at least one account is excluded from all conditional access 
 rules: 
