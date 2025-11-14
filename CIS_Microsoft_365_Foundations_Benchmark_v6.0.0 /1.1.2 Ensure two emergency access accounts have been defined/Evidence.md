@@ -10,7 +10,8 @@ Ensure a policy and procedure is in place at the organization:
 • Passwords should be at least 16 characters, randomly generated and MAY be 
 separated in multiple pieces to be joined on emergency. 
 
-Step 2 - Ensure two emergency access accounts are defined: 
+## **Step 2**
+Ensure two emergency access accounts are defined: 
 1. Navigate to Microsoft 365 admin center https://admin.microsoft.com 
 2. Expand Users > Active Users 
 3. Inspect the designated emergency access accounts and ensure the following: 
