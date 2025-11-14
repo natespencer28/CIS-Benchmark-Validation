@@ -44,6 +44,11 @@ rules:
 
 <img width="655" height="209" alt="image" src="https://github.com/user-attachments/assets/b9560aa4-0a30-4bf6-a235-3c02c09a5c52" />
 
+## **Additional suggestions for emergency account management:** 
+• Create access reviews for these users. 
+• Exclude users from conditional access rules. 
+• Add the account to a restricted management administrative unit. 
+
 
 
 
