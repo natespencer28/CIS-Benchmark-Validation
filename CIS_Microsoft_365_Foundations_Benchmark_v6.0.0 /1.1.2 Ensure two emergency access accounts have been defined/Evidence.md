@@ -28,6 +28,7 @@ rules:
 ### **The Evidence**
 
   ✅ The accounts are named correctly, and do NOT identify with a particular person.
+  
   ✅ The accounts use the default .onmicrosoft.com domain and not the organization's.
   ✅ The accounts are cloud-only.
   ✅ The accounts are unlicensed.
