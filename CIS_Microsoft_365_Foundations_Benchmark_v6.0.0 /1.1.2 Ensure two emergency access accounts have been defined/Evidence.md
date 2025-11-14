@@ -2,7 +2,8 @@
 
 ### **The Audit**
 
-Step 1 - Ensure a policy and procedure is in place at the organization: 
+## **Step 1**
+Ensure a policy and procedure is in place at the organization: 
 • FIDO2 Security Keys should be locked in a secure separate fireproof location. 
 • Passwords should be at least 16 characters, randomly generated and MAY be 
 separated in multiple pieces to be joined on emergency. 
