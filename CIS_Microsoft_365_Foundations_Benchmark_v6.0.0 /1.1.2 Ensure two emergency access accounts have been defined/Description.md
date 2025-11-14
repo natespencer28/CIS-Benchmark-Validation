@@ -1,19 +1,18 @@
-# **1.1.1 (L1) Ensure Administrative accounts are cloud-only**
+# **1.1.2 (L1) Ensure two emergency access accounts have been defined**
 
 ## 📌 Control Objective
-Regular user accounts should never be utilized 
-for administrative tasks and care should be taken, in the case of a hybrid environment, 
-to keep administrative accounts separate from on-prem accounts.
+Ensure two Emergency Access accounts have been defined. 
 ---
 ## 🔎 Description
-Administrative users will need to utilize login/logout functionality to switch accounts 
-when performing administrative tasks.
+ These emergencies could be due to several things, including: 
+• Technical failures of a cellular provider or Microsoft related service such as MFA. 
+• The last remaining Global Administrator account is inaccessible. 
 ---
 ## 🧠 Rationale
 Explain **why this control matters**, including:
-- Security principles (Zero Trust, Identity hygiene)
-- Relevant attack vectors this control protects against
-- Real-world risks if not implemented
+ In the event of losing access to administrative functions, an 
+organization may experience a significant loss in its ability to provide support, lose 
+insight into its security posture, and potentially suffer financial losses.
 
 Example:
 Enforcing this control reduces the attack surface by preventing compromised hybrid accounts from escalating privileges into the cloud environment.
