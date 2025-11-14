@@ -27,12 +27,12 @@ rules:
 
 ### **The Evidence**
 
-✅   The accounts are named correctly, and do NOT identify with a particular person.
-✅   The accounts use the default .onmicrosoft.com domain and not the organization's.
-✅   The accounts are cloud-only.
-✅   The accounts are unlicensed.
-✅   The accounts are assigned the Global Administrator directory role.
-✅   The accounts are excluded from CA Policies.
+  ✅   The accounts are named correctly, and do NOT identify with a particular person.
+  ✅   The accounts use the default .onmicrosoft.com domain and not the organization's.
+  ✅   The accounts are cloud-only.
+  ✅   The accounts are unlicensed.
+  ✅   The accounts are assigned the Global Administrator directory role.
+  ✅   The accounts are excluded from CA Policies.
 
 <img width="655" height="209" alt="image" src="https://github.com/user-attachments/assets/b9560aa4-0a30-4bf6-a235-3c02c09a5c52" />
 
