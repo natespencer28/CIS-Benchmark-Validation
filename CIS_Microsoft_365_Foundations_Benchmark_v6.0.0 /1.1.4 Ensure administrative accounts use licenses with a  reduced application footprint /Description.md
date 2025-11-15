@@ -1,7 +1,9 @@
 # **1.1.4 (L1) Ensure administrative accounts use licenses with a reduced application footprint**
 
 ## 📌 Control Objective
-Between two and four global administrators should be designated in the tenant.
+The recommended state is to not license a privileged account or use licenses without 
+associated applications such as Microsoft Entra ID P1 or Microsoft Entra ID 
+P2. 
 ---
 ## 🔎 Description
 Administrative accounts are special privileged accounts that could have varying levels 
