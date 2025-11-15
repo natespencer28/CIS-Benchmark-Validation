@@ -1,4 +1,4 @@
-🛠️ Audit Steps
+##**🛠️ Audit Steps**
 
 1. Navigate to the Microsoft 365 admin center https://admin.microsoft.com 
 2. Select Roles > Role assignments. 
@@ -11,5 +11,7 @@ groups.
 
 <img width="375" height="199" alt="image" src="https://github.com/user-attachments/assets/df57939b-5af1-44b5-a08e-eb180ef4874a" />
 
+
+🛠️ Audit Steps using Powershell 
 
 
