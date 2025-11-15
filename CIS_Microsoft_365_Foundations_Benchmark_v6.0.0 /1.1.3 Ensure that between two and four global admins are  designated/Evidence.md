@@ -7,6 +7,9 @@
 o If there are groups present, then inspect each group and its members. 
 o Take note of the total number of Global Administrators in and outside of 
 groups. 
-5. Ensure the number of Global Administrators is between two and four. 
+5. Ensure the number of Global Administrators is between two and four.
+
+<img width="375" height="199" alt="image" src="https://github.com/user-attachments/assets/df57939b-5af1-44b5-a08e-eb180ef4874a" />
+
 
 
