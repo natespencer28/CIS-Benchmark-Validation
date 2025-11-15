@@ -9,7 +9,7 @@ Microsoft Entra ID P2).
 o If an organization uses PIM to elevate a daily driver account to privileged 
 levels, this control and licensing requirement can be considered satisfied.
 
-***IN THIS SCENARIO I DON'T HAVE ENTRA ID P1 OR P2 SO I LEFT MY ADMIN ACCOUNT UNLICENSED TO SATISFY THIS BENCHMARK***
+***IN THIS SCENARIO I DON'T HAVE ENTRA ID P1 OR P2 SO I LEFT MY ADMIN ACCOUNT UNLICENSED TO SATISFY THIS BENCHMARK AND WOULD USE PIM FOR THE ANORAK@READYP1.ORG ACCOUNT***
 
 <img width="820" height="168" alt="image" src="https://github.com/user-attachments/assets/7f5662df-5ef1-48c6-a888-1aa159fe5d81" />
 
