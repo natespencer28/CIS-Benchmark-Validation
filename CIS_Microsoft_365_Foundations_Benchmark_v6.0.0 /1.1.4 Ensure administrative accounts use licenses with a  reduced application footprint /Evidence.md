@@ -51,4 +51,9 @@ join ", "
     $Report.Add($Object) 
 } 
  
-$Report 
+$Report
+```
+## Ouput of Powershell
+
+<img width="534" height="96" alt="image" src="https://github.com/user-attachments/assets/8e2ea314-ca5b-4374-af8e-5a0934ba5641" />
+
