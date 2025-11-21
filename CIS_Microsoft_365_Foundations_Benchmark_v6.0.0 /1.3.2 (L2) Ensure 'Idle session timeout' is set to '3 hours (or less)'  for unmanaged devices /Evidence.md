@@ -39,8 +39,59 @@ Write-Host "** FAIL **: Idle session timeout is not configured."
 <img width="561" height="408" alt="image" src="https://github.com/user-attachments/assets/88201053-e531-4687-a894-82262d390cf4" />
 
 
+### Conditional Access Policy Configuration Audit
 
-## Powershell Evidence
+- **Users:** All users  
+- **Cloud apps or actions:** Office 365 (Select apps)  
+- **Conditions → Client apps:** Browser only  
+- **Session:** Use app-enforced restrictions  
+- **Enable Policy:** On
+
+<img width="480" height="118" alt="image" src="https://github.com/user-attachments/assets/7451da19-ca4e-4d72-82f7-4a31008a8e26" />
+
+## Powershell Script
+Connect to Microsoft Graph using Connect-MgGraph -Scopes 
+"Policy.Read.All": 
+```powershell
+$Caps = Get-MgIdentityConditionalAccessPolicy -All | 
+    Where-Object { 
+$_.SessionControls.ApplicationEnforcedRestrictions.IsEnabled } 
+$CapReport = [System.Collections.Generic.List[Object]]::new()     
+# Filter to policies with "Use app enforced restrictions" enabled 
+ 
+# Loop through policies and generate a per policy report. 
+foreach ($policy in $Caps) { 
+    $Name = $policy.DisplayName 
+    $Users = $policy.Conditions.Users.IncludeUsers 
+    $Targets = $policy.Conditions.Applications.IncludeApplications 
+    $ClientApps = $policy.Conditions.ClientAppTypes 
+    $Restrictions = 
+$policy.SessionControls.ApplicationEnforcedRestrictions.IsEnabled 
+    $State = $policy.State 
+ 
+    $CountPass = $Targets.count -eq 1 -and $ClientApps.count -eq 1 
+    $Pass = $Targets -eq 'Office365' -and $ClientApps -eq 'browser' -and 
+            $Restrictions -and $CountPass -and $State -eq 'enabled' 
+ 
+    $obj = [PSCustomObject]@{ 
+        DisplayName             = $Name 
+        AuditState              = if ($Pass) { "PASS" } else { "FAIL" } 
+        IncludeUsers            = $Users 
+        IncludeApplications     = $Targets 
+        ClientAppTypes          = $ClientApps 
+        AppEnforcedRestrictions = $Restrictions 
+        State                   = $State 
+    } 
+    $CapReport.Add($obj) 
+} 
+ 
+if ($Caps) { 
+    $CapReport 
+} else { 
+    Write-Host "** FAIL **: There are no qualifying conditional access 
+policies." 
+}
+```
 
 
 
