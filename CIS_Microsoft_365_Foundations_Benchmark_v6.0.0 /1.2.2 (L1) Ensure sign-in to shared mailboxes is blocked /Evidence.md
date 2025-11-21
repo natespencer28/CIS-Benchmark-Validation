@@ -1,4 +1,4 @@
-🛠️ Audit Steps
+## 🛠️ Audit Steps
 
 1. Navigate to Microsoft 365 admin center https://admin.microsoft.com/ 
 2. Click to expand Teams & groups and select Shared mailboxes. 
@@ -8,7 +8,7 @@
 6. Ensure the text under the name reads Sign-in blocked. 
 7. Repeat for any additional shared mailboxes.
    
-🛠️ Audit Steps via Powershell
+## 🛠️ Audit Steps via Powershell
 
 1. Connect to Exchange Online using Connect-ExchangeOnline 
 2. Connect to Microsoft Graph using Connect-MgGraph -Scopes 
