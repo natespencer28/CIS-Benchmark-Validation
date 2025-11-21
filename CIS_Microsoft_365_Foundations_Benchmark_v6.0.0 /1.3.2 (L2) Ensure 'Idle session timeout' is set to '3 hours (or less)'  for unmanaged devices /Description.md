@@ -1,11 +1,17 @@
-1.3.1 (L1) Ensure the 'Password expiration policy' is set to 'Set
-passwords to never expire (recommended)'
+## 1.3.2 (L2) Ensure 'Idle session timeout' is set to '3 hours (or less)' 
+for unmanaged devices 
 
-📌 Control Objective
-Ensure the 'Password expiration policy' is set to 'Set passwords to never expire
+## 📌 Control Objective
+Idle session timeout allows the configuration of a setting which will timeout inactive 
+users after a pre-determined amount of time.
 
-🔎 Description
-Microsoft cloud-only accounts have a pre-defined password policy that cannot be changed. The only items that can change are the number of days until a password expires and whether or whether passwords expire at all.
+## 🔎 Description
+ When a user reaches the set idle timeout 
+session, they'll get a notification that they're about to be signed out. They must choose 
+to stay signed in or they'll be automatically signed out of all Microsoft 365 web apps. 
+Combined with a Conditional Access rule this will only impact unmanaged devices. 
 
-🧠 Rationale
-Organizations such as NIST and Microsoft have updated their password policy recommendations to not arbitrarily require users to change their passwords after a specific amount of time, unless there is evidence that the password is compromised, or the user forgot it.
+## 🧠 Rationale
+Ending idle sessions through an automatic process can help protect sensitive company 
+data and will add another layer of security for end users who work on unmanaged 
+devices that can potentially be accessed by the public. 
