@@ -18,8 +18,9 @@ Enable-OrganizationCustomization
 2. Run the following Exchange Online PowerShell command:
 
 ```powershell
-Set-SharingPolicy -Identity "Default Sharing Policy" -Enabled $False
+Get-SharingPolicy -Identity "Default Sharing Policy" | ft Name,Enabled 
 ```
+3. Verify Enabled is set to False 
 
 ## Evidence in my Tenant 
 
@@ -28,5 +29,10 @@ Set-SharingPolicy -Identity "Default Sharing Policy" -Enabled $False
 <img width="566" height="302" alt="image" src="https://github.com/user-attachments/assets/18ad89d3-2c29-4e6a-a1a2-70762fad17f3" />
 
 ## Powershell Audit Evidence 
+
+To remediate run this: 
+```powershell
+Set-SharingPolicy -Identity "Default Sharing Policy" -Enabled $False
+```
 
 <img width="900" height="121" alt="image" src="https://github.com/user-attachments/assets/42c8cce3-3dce-4fdc-9b8b-9f470acaa09c" />
