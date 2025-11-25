@@ -1,7 +1,7 @@
 ## 1.3.5 (L1) Ensure internal phishing protection for Forms is enabled 
 
 ## 📌 Control Objective
-Ensure 'User owned apps and services' is restricted
+Ensure internal phishing protection for Forms is enabled
 
 ## 🔎 Description
 Microsoft Forms can be used for phishing attacks by asking personal or sensitive 
