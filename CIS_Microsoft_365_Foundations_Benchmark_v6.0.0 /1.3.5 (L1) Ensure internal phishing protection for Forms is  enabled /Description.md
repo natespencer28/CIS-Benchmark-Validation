@@ -1,9 +1,13 @@
-## 1.3.4 (L2) Ensure 'User owned apps and services' is restricted
+## 1.3.5 (L1) Ensure internal phishing protection for Forms is enabled 
+
 ## 📌 Control Objective
 Ensure 'User owned apps and services' is restricted
 
 ## 🔎 Description
-By default, users can install add-ins in their Microsoft Word, Excel, and PowerPoint applications, allowing data access within the application.
+Microsoft Forms can be used for phishing attacks by asking personal or sensitive 
+information and collecting the results. Microsoft 365 has built-in protection that will 
+proactively scan for phishing attempt in forms such personal information request.
 
 ## 🧠 Rationale
-Attackers commonly use vulnerable and custom-built add-ins to access data in user applications.
+Enabling internal phishing protection for Microsoft Forms will prevent attackers using 
+forms for phishing attacks by asking personal or other sensitive information and URLs. 
